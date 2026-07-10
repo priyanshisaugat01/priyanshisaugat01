@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:414868,100:7aa2f7&height=200&section=header&text=Hi%20there,%20I'm%20Priyanshi%20%F0%9F%91%8B&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=Cloud%20%26%20DevOps%20Engineer%20in%20training&descAlignY=58&descSize=18&descColor=9ece6a" width="100%"/>
 
 <a href="https://github.com/priyanshisaugat01">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Computer+Science+Student;Learning+Cloud+%26+DevOps;Building+AeroGuard+%F0%9F%9B%AB;Aviation+Infrastructure+%2B+Monitoring+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Computer+Science+Student;Learning+Cloud+%26+DevOps;Building+SkyShield+%F0%9F%9B%A1%EF%B8%8F;Aviation+Infrastructure+%2B+DevSecOps+Enthusiast" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -23,61 +23,59 @@ I'm a **Computer Science student** currently learning **Cloud & DevOps**, with a
 name:        Priyanshi Saugat
 role:        Computer Science Student
 focus:       Cloud Infrastructure · DevOps · Site Reliability
-currently:   Building AeroGuard - aviation infra monitoring simulation
+currently:   Building SkyShield - DevSecOps compliance automation for aviation infra
 philosophy:  Learn by building - projects, deployments, debugging, real infra
 ```
 
 - 🎓 Computer Science student, learning Cloud & DevOps fundamentals in depth
 - ✈️ Deeply interested in aviation infrastructure and monitoring/observability systems
-- 🔭 Currently building **AeroGuard**, combining AWS, Kubernetes, Terraform, monitoring tooling, and AI-based concepts
+- 🔭 Currently building **SkyShield**, a DevSecOps compliance automation platform combining Terraform, Checkov, Trivy, and GitHub Actions
 - 🛠️ I learn by *doing* — most of my growth comes from projects, deployments, debugging, and hands-on experimentation with cloud infrastructure, not just theory
 - 🌱 Actively expanding into Site Reliability Engineering and aviation-domain infrastructure design
 
 <br/>
 
-## 🛫 Featured Project
+## 🛡️ Featured Project
 
 <table>
 <tr>
 <td width="100%">
 
-### AeroGuard — Aviation Infrastructure Monitoring (In Development)
+### SkyShield — DevSecOps Compliance Automation for Aviation Infrastructure
 
 <img src="https://img.shields.io/badge/status-actively%20building-9ece6a?style=flat-square&labelColor=1a1b27" alt="status"/>
 <img src="https://img.shields.io/badge/domain-aviation%20infrastructure-7aa2f7?style=flat-square&labelColor=1a1b27" alt="domain"/>
-<img src="https://img.shields.io/badge/type-cloud%20native%20%2F%20devops-bb9af7?style=flat-square&labelColor=1a1b27" alt="type"/>
+<img src="https://img.shields.io/badge/type-devsecops%20%2F%20compliance-bb9af7?style=flat-square&labelColor=1a1b27" alt="type"/>
 
-**The problem:** Aviation infrastructure needs continuous, reliable monitoring, but most learning projects stop at "deploy an app" and skip the observability, alerting, and infrastructure-as-code discipline that real aviation systems require. AeroGuard is my attempt to close that gap by simulating how modern aviation systems could be monitored using cloud-native and DevOps practices end-to-end.
+**The problem:** Aviation infrastructure operates under strict regulatory and safety requirements, yet Terraform misconfigurations, vulnerable container images, and leaked secrets routinely slip through manual review and aren't caught until after deployment. SkyShield automates security and compliance validation of cloud infrastructure and container artifacts *before* they reach production, replacing ad-hoc manual review with continuous, auditable scanning built directly into the CI/CD pipeline.
 
-**Technologies used:** AWS · Kubernetes · Terraform · monitoring tooling · AI-based anomaly detection concepts
+**Technologies used:** Terraform · Checkov · Trivy · Docker · GitHub Actions *(with AWS Lambda, DynamoDB, CloudWatch, SNS, and React planned for later phases)*
 
 <details>
-<summary><b>🔍 Current focus</b></summary>
+<summary><b>✅ What's built so far</b></summary>
 <br/>
 
-- AWS infrastructure
-- Kubernetes deployments
-- Monitoring & observability
-- Infrastructure as Code using Terraform
-- Simulated aviation telemetry
-- AI-based anomaly detection concepts
+- Terraform IaC scanning gate using Checkov, running automatically on every push and pull request
+- A remediated reference S3 bucket — taken from 13 failing Checkov checks down to 5 by enforcing encryption-by-default, versioning, disabled ACLs, and full public-access blocking
+- A hardened, multi-stage Docker build for a demo service — non-root runtime user, stripped build tooling, and a defined health check
+- Automated container vulnerability scanning with Trivy, gating the build on `HIGH`/`CRITICAL` findings
 
 </details>
 
 <details>
-<summary><b>🗺️ Planned features</b></summary>
+<summary><b>🗺️ Planned next</b></summary>
 <br/>
 
-- Real-time monitoring dashboards
-- Flight telemetry simulation
-- Infrastructure health alerts
-- CloudWatch & Grafana integration
-- CI/CD automation
-- Kubernetes-based deployment architecture
+- Secret detection across source and history using GitLeaks
+- Automated scan-report normalization via AWS Lambda
+- Persistent compliance history in DynamoDB
+- Operational metrics via CloudWatch and violation alerts via SNS
+- A React-based compliance dashboard
+- End-to-end CI/CD orchestration tying every phase together through GitHub Actions
 
 </details>
 
-**What I'm learning:** how to design cloud-native monitoring and observability for infrastructure that can't afford silent failures — combining IaC discipline (Terraform), container orchestration (Kubernetes), and the alerting/telemetry patterns that underpin real SRE work.
+**What I'm learning:** how to turn scanner output (Checkov, Trivy) into an enforced CI/CD gate rather than just a report — reasoning about IaC security patterns like least-privilege S3 configuration and encryption-by-default, and designing container images that minimize CVE surface area at the base-OS layer, not just the application layer.
 
 </td>
 </tr>
