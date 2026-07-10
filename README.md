@@ -6,28 +6,14 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Computer+Science+Student;Learning+Cloud+%26+DevOps;Building+SkyShield+%F0%9F%9B%A1%EF%B8%8F;Aviation+Infrastructure+%2B+DevSecOps+Enthusiast" alt="Typing SVG" />
 </a>
 
-<p><i>Aspiring Cloud &amp; DevOps Engineer — turning infrastructure into code, and code into compliance, one pipeline at a time.</i></p>
+<br/>
 
 <img src="https://komarev.com/ghpvc/?username=priyanshisaugat01&label=Profile%20Views&color=7aa2f7&style=for-the-badge" alt="Profile Views"/>
 <img src="https://img.shields.io/github/followers/priyanshisaugat01?label=Followers&style=for-the-badge&color=bb9af7&labelColor=1a1b27" alt="Followers"/>
 
-<br/><br/>
-
-<b>
-<a href="#about">About</a> ·
-<a href="#philosophy">Philosophy</a> ·
-<a href="#projects">Projects</a> ·
-<a href="#tech-stack">Tech Stack</a> ·
-<a href="#roadmap">Roadmap</a> ·
-<a href="#analytics">Analytics</a> ·
-<a href="#connect">Connect</a>
-</b>
-
 </div>
 
 <br/>
-
-<a id="about"></a>
 
 ## 🧭 About Me
 
@@ -37,8 +23,8 @@ I'm a **Computer Science student** currently learning **Cloud & DevOps**, with a
 name:        Priyanshi Saugat
 role:        Computer Science Student
 focus:       Cloud Infrastructure · DevOps · Site Reliability
-currently:   Building SkyShield — DevSecOps compliance automation for aviation infra
-philosophy:  Learn by building — projects, deployments, debugging, real infra
+currently:   Building SkyShield - DevSecOps compliance automation for aviation infra
+philosophy:  Learn by building - projects, deployments, debugging, real infra
 ```
 
 - 🎓 Computer Science student, learning Cloud & DevOps fundamentals in depth
@@ -49,233 +35,84 @@ philosophy:  Learn by building — projects, deployments, debugging, real infra
 
 <br/>
 
-<a id="philosophy"></a>
-
-## 🧠 Engineering Philosophy
+## 🛡️ Featured Project
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="100%">
 
-**⚙️ Automation**
-Anything done manually more than once is a candidate for a pipeline. Manual steps are where compliance gaps and human error hide.
+### SkyShield — DevSecOps Compliance Automation for Aviation Infrastructure
 
-**🏗️ Infrastructure**
-Infrastructure should be defined as code, reviewed like code, and versioned like code — not clicked together in a console.
+<img src="https://img.shields.io/badge/status-actively%20building-9ece6a?style=flat-square&labelColor=1a1b27" alt="status"/>
+<img src="https://img.shields.io/badge/domain-aviation%20infrastructure-7aa2f7?style=flat-square&labelColor=1a1b27" alt="domain"/>
+<img src="https://img.shields.io/badge/type-devsecops%20%2F%20compliance-bb9af7?style=flat-square&labelColor=1a1b27" alt="type"/>
 
-</td>
-<td width="50%" valign="top">
+**The problem:** Aviation infrastructure operates under strict regulatory and safety requirements, yet Terraform misconfigurations, vulnerable container images, and leaked secrets routinely slip through manual review and aren't caught until after deployment. SkyShield automates security and compliance validation of cloud infrastructure and container artifacts *before* they reach production, replacing ad-hoc manual review with continuous, auditable scanning built directly into the CI/CD pipeline.
 
-**🔐 Security**
-Security checks belong *in* the pipeline as an enforced gate, not as a checklist reviewed after something is already deployed.
+**Technologies used:** Terraform · Checkov · Trivy · Docker · GitHub Actions *(with AWS Lambda, DynamoDB, CloudWatch, SNS, and React planned for later phases)*
 
-**📈 Observability**
-You can't fix — or trust — what you can't see. Metrics, logs, and alerts come before optimization, not after.
+<details>
+<summary><b>✅ What's built so far</b></summary>
+<br/>
+
+- Terraform IaC scanning gate using Checkov, running automatically on every push and pull request
+- A remediated reference S3 bucket — taken from 13 failing Checkov checks down to 5 by enforcing encryption-by-default, versioning, disabled ACLs, and full public-access blocking
+- A hardened, multi-stage Docker build for a demo service — non-root runtime user, stripped build tooling, and a defined health check
+- Automated container vulnerability scanning with Trivy, gating the build on `HIGH`/`CRITICAL` findings
+
+</details>
+
+<details>
+<summary><b>🗺️ Planned next</b></summary>
+<br/>
+
+- Secret detection across source and history using GitLeaks
+- Automated scan-report normalization via AWS Lambda
+- Persistent compliance history in DynamoDB
+- Operational metrics via CloudWatch and violation alerts via SNS
+- A React-based compliance dashboard
+- End-to-end CI/CD orchestration tying every phase together through GitHub Actions
+
+</details>
+
+**What I'm learning:** how to turn scanner output (Checkov, Trivy) into an enforced CI/CD gate rather than just a report — reasoning about IaC security patterns like least-privilege S3 configuration and encryption-by-default, and designing container images that minimize CVE surface area at the base-OS layer, not just the application layer.
 
 </td>
 </tr>
 </table>
 
-> 🌱 **Continuous learning:** I'd rather ship something small and real, learn from how it actually behaves, and iterate — than wait until I feel "ready" to start.
-
 <br/>
-
-<a id="projects"></a>
-
-## 🛠️ Featured Projects
-
-<a id="skyshield"></a>
-
-### 🛡️ SkyShield — DevSecOps Compliance Automation for Aviation Infrastructure
-
-<img src="https://img.shields.io/badge/status-actively%20building-9ece6a?style=flat-square&labelColor=1a1b27" alt="status"/>
-<img src="https://img.shields.io/badge/domain-aviation%20infrastructure-7aa2f7?style=flat-square&labelColor=1a1b27" alt="domain"/>
-<img src="https://img.shields.io/badge/type-devsecops%20%2F%20compliance-bb9af7?style=flat-square&labelColor=1a1b27" alt="type"/>
-<img src="https://img.shields.io/badge/license-Apache%202.0-e0af68?style=flat-square&labelColor=1a1b27" alt="license"/>
-
-**Problem**
-Aviation infrastructure operates under strict regulatory and safety requirements, yet Terraform misconfigurations, vulnerable container images, and leaked secrets routinely slip past manual review and aren't caught until after deployment. SkyShield automates security and compliance validation of cloud infrastructure and container artifacts *before* they reach production — replacing ad-hoc manual review with continuous, auditable scanning built directly into the CI/CD pipeline.
-
-**Architecture**
-
-```mermaid
-%%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#24283b', 'primaryTextColor': '#c0caf5', 'primaryBorderColor': '#7aa2f7', 'lineColor': '#7aa2f7', 'secondaryColor': '#414868', 'tertiaryColor': '#1a1b27', 'fontFamily': 'monospace' }}}%%
-flowchart TD
-    A["Source Repo<br/>Terraform · Dockerfile · App code"] --> B["GitHub Actions Pipeline"]
-    B --> C["Checkov<br/>IaC Scan"]
-    B --> D["Trivy<br/>Container Scan"]
-    C --> E["Scan Reports"]
-    D --> E
-    E -.-> F["AWS Lambda<br/>Report Processor (planned)"]
-    F -.-> G[("DynamoDB<br/>Compliance History (planned)")]
-    F -.-> H["CloudWatch<br/>Metrics (planned)"]
-    F -.-> I["SNS<br/>Alerts (planned)"]
-    G -.-> J["React Dashboard (planned)"]
-    H -.-> J
-    I -.-> J
-
-    classDef built fill:#1a1b27,stroke:#9ece6a,stroke-width:2px,color:#c0caf5;
-    classDef planned fill:#1a1b27,stroke:#565f89,stroke-width:1px,stroke-dasharray:5 5,color:#565f89;
-    class A,B,C,D,E built;
-    class F,G,H,I,J planned;
-```
-
-*Solid nodes are built and running today; dashed nodes are planned for later phases.*
-
-**Tech Stack**
-
-<img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
-<img src="https://img.shields.io/badge/Checkov-9ece6a?style=flat-square&logoColor=white" alt="Checkov"/>
-<img src="https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logoColor=white" alt="Trivy"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
-<img src="https://img.shields.io/badge/AWS%20(planned)-565f89?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS planned"/>
-<img src="https://img.shields.io/badge/React%20(planned)-565f89?style=flat-square&logo=react&logoColor=white" alt="React planned"/>
-
-**Security Features**
-
-- ✅ Automated **Checkov** IaC scan gates every push and pull request against the Terraform root module
-- ✅ Reference **S3 bucket hardened**: AES256 encryption by default, versioning enabled, ACLs fully disabled, all four public-access-block controls enforced
-- ✅ **Multi-stage, non-root Docker build** — build tooling (npm/npx/corepack) stripped from the runtime image to shrink CVE surface
-- ✅ Automated **Trivy** container scan blocks the build on `HIGH`/`CRITICAL` vulnerabilities on every push
-- ✅ Independent workflows for IaC vs. container scanning, so each gate fails visibly and separately
-
-**Current Progress**
-
-| Phase | Focus | Status |
-|---|---|:---:|
-| 1 | Foundation & governance docs | ✅ |
-| 2 | Terraform + Checkov IaC scanning | ✅ |
-| 3 | S3 remediation (13 → 5 failing checks) | ✅ |
-| 4 | Docker + Trivy container scanning | 🔄 *current* |
-| 5 | Secret detection (GitLeaks) | ⏳ |
-| 6 | Report processing (AWS Lambda) | ⏳ |
-| 7 | Storage & observability (DynamoDB, CloudWatch) | ⏳ |
-| 8 | Alerting (SNS) | ⏳ |
-| 9 | Compliance dashboard (React) | ⏳ |
-| 10 | End-to-end CI/CD automation | ⏳ |
-
-<details>
-<summary><b>🗺️ Future Roadmap — Phases 5-10</b></summary>
-<br/>
-
-- Secret detection across source and history using **GitLeaks**
-- Automated scan-report normalization via **AWS Lambda**
-- Persistent compliance history in **DynamoDB**
-- Operational metrics via **CloudWatch** and violation alerts via **SNS**
-- A **React**-based compliance dashboard for visualizing posture and trends
-- End-to-end orchestration tying every phase together through **GitHub Actions**
-
-</details>
-
-**Lessons Learned**
-
-- Turning a scanner's output into an *enforced CI gate* — failing the build, not just producing a report — is a different discipline than running a scanner once locally.
-- Fixing IaC findings at the *configuration-pattern* level (e.g. `BucketOwnerEnforced` + full public-access block) closes an entire category of findings at once, instead of patching one check at a time.
-- Most container CVEs weren't in my application code at all — stripping unused runtime tooling eliminated 12 `HIGH` findings that had nothing to do with the app itself.
-- Some findings, like a base-image OpenSSL CVE, are outside your control until the upstream image is rebuilt — learning to tell "actionable now" apart from "waiting on upstream" is its own skill.
-
-<br/>
-
-<a id="aeroguard"></a>
-
-### ✈️ AeroGuard — Aviation Infrastructure Monitoring (Concept & Early Build)
-
-<img src="https://img.shields.io/badge/status-early%20development-e0af68?style=flat-square&labelColor=1a1b27" alt="status"/>
-<img src="https://img.shields.io/badge/domain-aviation%20infrastructure-7aa2f7?style=flat-square&labelColor=1a1b27" alt="domain"/>
-<img src="https://img.shields.io/badge/type-cloud%20native%20%2F%20observability-bb9af7?style=flat-square&labelColor=1a1b27" alt="type"/>
-
-**Problem**
-Most learning projects stop at "deploy an app" and skip the observability, alerting, and infrastructure-as-code discipline that real aviation systems require. AeroGuard is my attempt to close that gap by simulating how modern aviation systems could be monitored using cloud-native and DevOps practices, combining AWS, Kubernetes, Terraform, monitoring tooling, and AI-based anomaly detection concepts.
-
-**Planned Architecture** *(concept stage — nothing below is built yet)*
-
-```mermaid
-%%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#1a1b27', 'primaryTextColor': '#565f89', 'primaryBorderColor': '#565f89', 'lineColor': '#565f89', 'fontFamily': 'monospace' }}}%%
-flowchart LR
-    A["Simulated Aviation Telemetry"] -.-> B["AWS Infrastructure"]
-    B -.-> C["Kubernetes Deployments"]
-    C -.-> D["Monitoring & Observability<br/>CloudWatch + Grafana"]
-    D -.-> E["AI-based Anomaly Detection"]
-    E -.-> F["Real-time Dashboards & Alerts"]
-
-    classDef planned fill:#1a1b27,stroke:#565f89,stroke-width:1px,stroke-dasharray:5 5,color:#565f89;
-    class A,B,C,D,E,F planned;
-```
-
-**Tech Stack (planned)**
-
-<img src="https://img.shields.io/badge/AWS-565f89?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS"/>
-<img src="https://img.shields.io/badge/Kubernetes-565f89?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
-<img src="https://img.shields.io/badge/Terraform-565f89?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
-<img src="https://img.shields.io/badge/CloudWatch-565f89?style=flat-square&logo=amazoncloudwatch&logoColor=white" alt="CloudWatch"/>
-<img src="https://img.shields.io/badge/Grafana-565f89?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"/>
-
-**Key Focus Areas**
-
-- AWS infrastructure
-- Kubernetes deployments
-- Monitoring & observability
-- Infrastructure as Code using Terraform
-- Simulated aviation telemetry
-- AI-based anomaly detection concepts
-
-**Current Progress:** Early development — architecture and technology choices are defined; implementation is ongoing.
-
-<details>
-<summary><b>🗺️ Future Roadmap</b></summary>
-<br/>
-
-- Real-time monitoring dashboards
-- Flight telemetry simulation
-- Infrastructure health alerts
-- CloudWatch & Grafana integration
-- CI/CD automation
-- Kubernetes-based deployment architecture
-
-</details>
-
-**Lessons Learned (in progress):** how to design cloud-native monitoring and observability for infrastructure that can't afford silent failures — combining IaC discipline (Terraform), container orchestration (Kubernetes), and the alerting/telemetry patterns that underpin real SRE work.
-
-<br/>
-
-<a id="tech-stack"></a>
 
 ## 🧰 Tech Stack
 
 <table>
 <tr>
-<td valign="top" width="33%">
+<td valign="top" width="50%">
 
-**🟢 Core Skills**
-<br/><sub>Used repeatedly across shipped project work</sub>
-<br/><br/>
+**Cloud & Infrastructure as Code**
 
-<img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"/><br/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/><br/>
-<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/><br/>
-<img src="https://img.shields.io/badge/Linux-1a1b27?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux"/><br/>
-<img src="https://img.shields.io/badge/Git%20%26%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Git & GitHub"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+<img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"/>
 
-</td>
-<td valign="top" width="33%">
+**Containers & Orchestration**
 
-**🟡 Working Knowledge**
-<br/><sub>Familiar and used, still deepening</sub>
-<br/><br/>
-
-<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/><br/>
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins"/>
-
-</td>
-<td valign="top" width="33%">
-
-**🔵 Currently Learning**
-<br/><sub>Actively building proficiency</sub>
-<br/><br/>
-
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
 <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+
+</td>
+<td valign="top" width="50%">
+
+**CI/CD**
+
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+
+**OS, Language & Version Control**
+
+<img src="https://img.shields.io/badge/Linux-1a1b27?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 
 </td>
 </tr>
@@ -283,47 +120,33 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=terraform,docker,githubactions,linux,git,github,aws,python,jenkins,kubernetes&theme=dark" alt="skill icons"/>
+<img src="https://skillicons.dev/icons?i=aws,terraform,docker,kubernetes,jenkins,githubactions,linux,py,git,github&theme=dark" alt="skill icons"/>
 
 </div>
 
 <br/>
 
-<a id="roadmap"></a>
-
-## 🗺️ Learning Roadmap
-
-```
- ✅ FOUNDATIONS              🔄 CURRENT FOCUS                🎯 WHERE I'M HEADED
- ─────────────────           ─────────────────────          ─────────────────────
- Git & GitHub                Advanced DevOps                 Cloud & DevOps Engineer
- Linux                       Monitoring & Observability       specializing in scalable,
- Docker                      Site Reliability Engineering     reliable aviation
- Terraform                   Kubernetes Architecture          infrastructure systems.
- GitHub Actions              Aviation Infrastructure
- AWS & Python basics         Systems                          Building step by step,
-                                                                learning every day.
-```
+## 🌱 Currently Learning
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Git%20%26%20GitHub-9ece6a?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/Linux-9ece6a?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/Docker-9ece6a?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/Terraform-9ece6a?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/GitHub%20Actions-9ece6a?style=flat-square&labelColor=1a1b27" alt=""/>
-<br/>
-<img src="https://img.shields.io/badge/Advanced%20DevOps-7aa2f7?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/Monitoring%20%26%20Observability-7aa2f7?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/SRE-7aa2f7?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/Kubernetes%20Architecture-7aa2f7?style=flat-square&labelColor=1a1b27" alt=""/>
-<img src="https://img.shields.io/badge/Aviation%20Infrastructure-7aa2f7?style=flat-square&labelColor=1a1b27" alt=""/>
+<img src="https://img.shields.io/badge/Advanced%20DevOps-7aa2f7?style=for-the-badge&labelColor=1a1b27" alt="Advanced DevOps"/>
+<img src="https://img.shields.io/badge/Monitoring%20%26%20Observability-bb9af7?style=for-the-badge&labelColor=1a1b27" alt="Monitoring & Observability"/>
+<img src="https://img.shields.io/badge/Site%20Reliability%20Engineering-f7768e?style=for-the-badge&labelColor=1a1b27" alt="SRE"/>
+<img src="https://img.shields.io/badge/Aviation%20Infrastructure%20Systems-e0af68?style=for-the-badge&labelColor=1a1b27" alt="Aviation Infrastructure"/>
+<img src="https://img.shields.io/badge/Kubernetes%20Architecture-9ece6a?style=for-the-badge&labelColor=1a1b27" alt="Kubernetes Architecture"/>
 
 </div>
 
 <br/>
 
-<a id="analytics"></a>
+## 🎯 Goal
+
+> To become a **Cloud & DevOps Engineer** specializing in scalable and reliable aviation infrastructure systems.
+>
+> Building step by step, learning every day.
+
+<br/>
 
 ## 📊 GitHub Analytics
 
@@ -336,13 +159,17 @@ flowchart LR
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=priyanshisaugat01&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=7aa2f7&line=bb9af7&point=f7768e" alt="Activity Graph" width="98%"/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=priyanshisaugat01&theme=tokyonight&no-frame=true&margin-w=8&column=4&row=2" alt="GitHub Trophies" width="98%"/>
+</div>
+
+### 🏆 Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=priyanshisaugat01&theme=tokyonight&no-frame=true&margin-w=10&row=1&column=6" alt="GitHub Trophies"/>
 
 </div>
 
-<details>
-<summary><b>🐍 Contribution Snake</b></summary>
-<br/>
+### 🐍 Contribution Snake
 
 <div align="center">
 
@@ -354,15 +181,9 @@ flowchart LR
 
 </div>
 
-</details>
-
 <br/>
 
-<a id="connect"></a>
-
-## 👋 Let's Connect
-
-If any of this resonates — DevSecOps automation, aviation-grade reliability, or just clean infrastructure code — take a look through my [repositories](https://github.com/priyanshisaugat01?tab=repositories). I'm always open to feedback, collaboration, and learning from people further along this path than I am.
+## 📫 Connect With Me
 
 <div align="center">
 
@@ -370,9 +191,7 @@ If any of this resonates — DevSecOps automation, aviation-grade reliability, o
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
-<br/><br/>
-
-<i>Thanks for stopping by — back to building.</i>
+</div>
 
 <br/>
 
