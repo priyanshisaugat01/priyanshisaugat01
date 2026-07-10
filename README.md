@@ -1,27 +1,73 @@
- Hi, I'm Priyanshi 
+<div align="center">
 
-I'm a Computer Science student currently learning Cloud & DevOps with a strong interest in aviation infrastructure and monitoring systems.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:414868,100:7aa2f7&height=200&section=header&text=Hi%20there,%20I'm%20Priyanshi%20%F0%9F%91%8B&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=Cloud%20%26%20DevOps%20Engineer%20in%20training&descAlignY=58&descSize=18&descColor=9ece6a" width="100%"/>
 
-Right now I'm building **AeroGuard** — an aviation-focused infrastructure monitoring project where I'm combining AWS, Kubernetes, Terraform, monitoring tools, and AI-based concepts to simulate real-world aviation infrastructure workflows.
+<a href="https://github.com/priyanshisaugat01">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Computer+Science+Student;Learning+Cloud+%26+DevOps;Building+AeroGuard+%F0%9F%9B%AB;Aviation+Infrastructure+%2B+Monitoring+Enthusiast" alt="Typing SVG" />
+</a>
 
-I enjoy building things practically instead of only learning theory, so most of my learning happens through projects, deployments, debugging, and experimenting with cloud infrastructure.
+<br/>
 
+<img src="https://komarev.com/ghpvc/?username=priyanshisaugat01&label=Profile%20Views&color=7aa2f7&style=for-the-badge" alt="Profile Views"/>
+<img src="https://img.shields.io/github/followers/priyanshisaugat01?label=Followers&style=for-the-badge&color=bb9af7&labelColor=1a1b27" alt="Followers"/>
 
-## AeroGuard
+</div>
 
-AeroGuard is an AI-powered aviation infrastructure monitoring project currently under development.
+<br/>
 
-The idea behind this project is to simulate how modern aviation systems can be monitored using cloud-native and DevOps technologies.
+## 🧭 About Me
 
-### Current Focus
-- AWS Infrastructure
-- Kubernetes Deployments
-- Monitoring & Observability
+I'm a **Computer Science student** currently learning **Cloud & DevOps**, with a strong interest in **aviation infrastructure and monitoring systems**. I like understanding how large, safety-critical systems stay reliable — and I'm building my skills toward exactly that.
+
+```yaml
+name:        Priyanshi Saugat
+role:        Computer Science Student
+focus:       Cloud Infrastructure · DevOps · Site Reliability
+currently:   Building AeroGuard - aviation infra monitoring simulation
+philosophy:  Learn by building - projects, deployments, debugging, real infra
+```
+
+- 🎓 Computer Science student, learning Cloud & DevOps fundamentals in depth
+- ✈️ Deeply interested in aviation infrastructure and monitoring/observability systems
+- 🔭 Currently building **AeroGuard**, combining AWS, Kubernetes, Terraform, monitoring tooling, and AI-based concepts
+- 🛠️ I learn by *doing* — most of my growth comes from projects, deployments, debugging, and hands-on experimentation with cloud infrastructure, not just theory
+- 🌱 Actively expanding into Site Reliability Engineering and aviation-domain infrastructure design
+
+<br/>
+
+## 🛫 Featured Project
+
+<table>
+<tr>
+<td width="100%">
+
+### AeroGuard — Aviation Infrastructure Monitoring (In Development)
+
+<img src="https://img.shields.io/badge/status-actively%20building-9ece6a?style=flat-square&labelColor=1a1b27" alt="status"/>
+<img src="https://img.shields.io/badge/domain-aviation%20infrastructure-7aa2f7?style=flat-square&labelColor=1a1b27" alt="domain"/>
+<img src="https://img.shields.io/badge/type-cloud%20native%20%2F%20devops-bb9af7?style=flat-square&labelColor=1a1b27" alt="type"/>
+
+**The problem:** Aviation infrastructure needs continuous, reliable monitoring, but most learning projects stop at "deploy an app" and skip the observability, alerting, and infrastructure-as-code discipline that real aviation systems require. AeroGuard is my attempt to close that gap by simulating how modern aviation systems could be monitored using cloud-native and DevOps practices end-to-end.
+
+**Technologies used:** AWS · Kubernetes · Terraform · monitoring tooling · AI-based anomaly detection concepts
+
+<details>
+<summary><b>🔍 Current focus</b></summary>
+<br/>
+
+- AWS infrastructure
+- Kubernetes deployments
+- Monitoring & observability
 - Infrastructure as Code using Terraform
-- Simulated Aviation Telemetry
+- Simulated aviation telemetry
 - AI-based anomaly detection concepts
 
-### Planned Features
+</details>
+
+<details>
+<summary><b>🗺️ Planned features</b></summary>
+<br/>
+
 - Real-time monitoring dashboards
 - Flight telemetry simulation
 - Infrastructure health alerts
@@ -29,43 +75,128 @@ The idea behind this project is to simulate how modern aviation systems can be m
 - CI/CD automation
 - Kubernetes-based deployment architecture
 
-##  Tech Stack
+</details>
 
-- AWS
-- Docker
-- Kubernetes
-- Terraform
-- Jenkins
-- GitHub Actions
-- Linux
-- Python
-- Git & GitHub
+**What I'm learning:** how to design cloud-native monitoring and observability for infrastructure that can't afford silent failures — combining IaC discipline (Terraform), container orchestration (Kubernetes), and the alerting/telemetry patterns that underpin real SRE work.
 
-##  Currently Learning
+</td>
+</tr>
+</table>
 
-- Advanced DevOps
-- Monitoring & Observability
-- Site Reliability Engineering
-- Aviation infrastructure systems
-- Kubernetes architecture
+<br/>
 
-##  Goal
+## 🧰 Tech Stack
 
-To become a Cloud & DevOps Engineer specializing in scalable and reliable aviation infrastructure systems.
+<table>
+<tr>
+<td valign="top" width="50%">
 
- Building step by step, learning every day.
+**Cloud & Infrastructure as Code**
 
-<!--
-**priyanshisaugat01/priyanshisaugat01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+<img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"/>
 
-Here are some ideas to get you started:
+**Containers & Orchestration**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+
+</td>
+<td valign="top" width="50%">
+
+**CI/CD**
+
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+
+**OS, Language & Version Control**
+
+<img src="https://img.shields.io/badge/Linux-1a1b27?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=aws,terraform,docker,kubernetes,jenkins,githubactions,linux,py,git,github&theme=dark" alt="skill icons"/>
+
+</div>
+
+<br/>
+
+## 🌱 Currently Learning
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Advanced%20DevOps-7aa2f7?style=for-the-badge&labelColor=1a1b27" alt="Advanced DevOps"/>
+<img src="https://img.shields.io/badge/Monitoring%20%26%20Observability-bb9af7?style=for-the-badge&labelColor=1a1b27" alt="Monitoring & Observability"/>
+<img src="https://img.shields.io/badge/Site%20Reliability%20Engineering-f7768e?style=for-the-badge&labelColor=1a1b27" alt="SRE"/>
+<img src="https://img.shields.io/badge/Aviation%20Infrastructure%20Systems-e0af68?style=for-the-badge&labelColor=1a1b27" alt="Aviation Infrastructure"/>
+<img src="https://img.shields.io/badge/Kubernetes%20Architecture-9ece6a?style=for-the-badge&labelColor=1a1b27" alt="Kubernetes Architecture"/>
+
+</div>
+
+<br/>
+
+## 🎯 Goal
+
+> To become a **Cloud & DevOps Engineer** specializing in scalable and reliable aviation infrastructure systems.
+>
+> Building step by step, learning every day.
+
+<br/>
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=priyanshisaugat01&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" alt="GitHub Stats" width="49%"/>
+<img src="https://streak-stats.demolab.com/?user=priyanshisaugat01&theme=tokyonight&hide_border=true&background=1a1b27&stroke=7aa2f7&ring=bb9af7&fire=f7768e&currStreakLabel=c0caf5" alt="GitHub Streak" width="49%"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyanshisaugat01&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5" alt="Top Languages" width="49%"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=priyanshisaugat01&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=7aa2f7&line=bb9af7&point=f7768e" alt="Activity Graph" width="98%"/>
+
+</div>
+
+### 🏆 Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=priyanshisaugat01&theme=tokyonight&no-frame=true&margin-w=10&row=1&column=6" alt="GitHub Trophies"/>
+
+</div>
+
+### 🐍 Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/priyanshisaugat01/priyanshisaugat01/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/priyanshisaugat01/priyanshisaugat01/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/priyanshisaugat01/priyanshisaugat01/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation" width="100%"/>
+</picture>
+
+</div>
+
+<br/>
+
+## 📫 Connect With Me
+
+<div align="center">
+
+<a href="https://github.com/priyanshisaugat01">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7aa2f7,50:414868,100:1a1b27&height=120&section=footer" width="100%"/>
+
+</div>
